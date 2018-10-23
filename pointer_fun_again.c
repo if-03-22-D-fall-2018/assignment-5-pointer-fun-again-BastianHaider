@@ -25,10 +25,6 @@ int main(int argc, char const *argv[]) {
   change_struct(play_struct, play_struct_pointer);
   print_struct(play_struct, play_struct_pointer);
 
-  print_string(play_struct.a_string);
-  change_string(play_struct.a_string,&another_string_p);
-  print_string(play_struct.a_string);
-  print_string(another_string_p);
   return 0;
 }
 void print_struct(struct PlayStruct ps,struct PlayStruct* pps){
