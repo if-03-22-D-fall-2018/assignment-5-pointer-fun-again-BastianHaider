@@ -6,7 +6,7 @@
 struct PlayStruct
 {
   int int_value;
-  double double_value
+  double double_value;
   char a_string[64];
 };
 
@@ -19,7 +19,7 @@ int main(int argc, char const *argv[]) {
   struct PlayStruct play_struct ={4,4.5, "Bastian Haider"};
   struct PlayStruct *play_struct_pointer = &play_struct;
   char another_string[16] = "new";
-  char *another_string_p = another_string
+  char *another_string_p = another_string;
 
   print_struct(play_struct, play_struct_pointer);
   change_struct(play_struct, play_struct_pointer);
